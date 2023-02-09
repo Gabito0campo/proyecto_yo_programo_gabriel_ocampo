@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.header {
+    font-family: 'Tahoma', Verdana;
+    position: relative;
+    left: 20px;
+}
+
+
+.backfondo {
+    background-color:  #057433;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+}
+.backfondo2 {
+    background-color:  #057433;
+    color: #ffffff;
+    border: 2px, black;
+    padding: 40px 20px 20px;
+}
+
+.active {
+    background-color: #057433;
+}
+/* Para Teléfonos Móviles: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* Para Tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.img1 {
+    border-radius: 50%;
+}
+
+body {
+    background-image: url("pexels-sorapong-chaipanya.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section1{
+    font-family: Verdana;
+    color:rgb(252, 252, 252);
+    font-size: 40px;
+    margin-left: 20px;
+}
+.section2 {
+    color:rgb(252, 252, 252);
+    font-family: Segoe UI;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.section3 {
+    color: rgb(252, 252, 252);
+    font-family: Tahoma;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.section4 {
+    color:rgb(252, 252, 252);
+    font-family: Cambria;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.section5{
+    color:rgb(252, 252, 252);
+    font-family: Segoe UI;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.button1 {
+    display: inline-block;
+    background-color:  #057433; 
+    color: white; 
+    text-align: center;
+    font-size: 24px;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 12px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button1:hover{
+    background-color: white;
+    color:  #057433;
+}
+
+
+.button1:hover span {
+    padding-right: 25px;
+    transition: 0.5s;
+}
+
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.icons {
+    color: white;
+    height: 60px;
+    width: 60px;
+    text-align: right;
+}
+
+.fondoblack {
+    background-color: black;
+}
