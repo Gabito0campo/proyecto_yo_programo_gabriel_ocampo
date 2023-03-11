@@ -4,3 +4,9 @@ function nuevoDocumento() {
 function nuevoHtml() {
     window.location.assign("certificado_ocampo.html")
 }
+function imageInicio() {
+    window.location.assign("mi_CV_en_linea.html")
+}
+function premio() {
+    alert ("Muchas gracias por visitar mi página")
+}
